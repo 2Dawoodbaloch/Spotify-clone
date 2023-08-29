@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 70px;
+    /* background-color: darkorange; */
+    background-color: rgb(189, 123, 42);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+ul li {
+    margin-top: 25px;
+    padding: 0 15px;
+}
+
+.brand-logo img {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    bottom: 10px;
+    border-radius: 50%;
+
+}
+
+#logo-name {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    min-height: 65vh;
+    width: 70%;
+    border-radius: 12px;
+    /* background-color: black; */
+    display: flex;
+    margin: 25px auto;
+    background-image: url("girs\ listen3.jpg");
+    background-size: cover;
+
+
+}
+
+.bottom {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(189, 123, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 13px;
+}
+
+#range-input {
+    width: 60vw;
+    cursor: pointer;
+}
+
+.icons {
+    color: aliceblue;
+    margin: 8px 0;
+    font-size: 1.3rem;
+}
+
+.icons .fa3 {
+    color: black;
+    cursor: pointer;
+}
+
+.fa3 {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.song-list {
+    display: flex;
+    margin: 30px 10px;
+    flex-direction: column;
+}
+
+.song-info {
+    color: black;
+    position: absolute;
+    font-size: 1vw;
+    left: 20%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.song-info img {
+    width: 0;
+    transition: width 0.7s ease-in-out;
+    padding-right: 5px;
+    width: 1vw;
+}
+
+.h1 {
+    color: black;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.song-item {
+    display: flex;
+    border: 3px solid white;
+    color: white;
+    width: 30vw;
+    height: 40px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 34px;
+    justify-content: space-between;
+}
+
+.song-item img {
+    width: 45px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.songlistplay,
+i {
+    color: black;
+}
+
+.song-name {
+    color: black;
+    font-size: 1vw;
+}
+
+.song-item img,
+.song-name,
+.songlistplay {
+    padding: 0px 0px;
+}
+
+.song-banner {
+    color: white
+}
+
+@media only screen and (max-width: 768px) {
+    .song-item {
+        width: auto;
+        font-size: 4vw;
+    }
+
+    .song-info {
+        width: auto;
+    }
+
+    .song-name {
+        font-size: 3vw;
+    }
+
+    .songlistplay span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .song-info img {
+        position: absolute;
+        left: 380%;
+
+    }
+
+}
